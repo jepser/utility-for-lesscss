@@ -1,0 +1,73 @@
+/*
+Utility Functions For LESS CSS
+*/
+.clear{
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0;
+}
+
+.cover{
+	-moz-background-size:cover!important;
+	-webkit-background-size:cover!important;
+	-o-background-size:cover!important;
+	background-size:cover!important;
+}
+.bs(@x, @y, @b, @c){
+	-moz-box-shadow:@x @y @b @c;
+	-webkit-box-shadow:@x @y @b @c;
+	-o-box-shadow:@x @y @b @c;
+	box-shadow:@x @y @b @c;
+}
+.transition(@m, @t, @e){
+	-moz-transition:@m @t @e;
+	-webkit-transition:@m @t @e;
+	-o-transition:@m @t @e;
+	transition:@m @t @e;
+}
+.transform(@t){
+	-moz-transform:@t;
+	-webkit-transform:@t;
+	-o-transform:@t;
+	transform:@t;
+}
+.radius(@r){
+	-moz-border-radius:@r;
+	-webkit-border-radius:@r;
+	-o-border-radius:@r;
+	border-radius:@r;
+}
+
+.font-size(@size){
+	font-size: unit(@size * 10, px);
+	font-size: unit(@size, rem)
+}
+
+.all{
+	width:100%;
+	position:relative;
+}
+
+.fright{
+	float:right;
+	display:inline;
+}
+.fleft{
+	float:left;
+	display:inline;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.box-size{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 
+}
+
